@@ -27,10 +27,10 @@ builder.Services.AddOpenApiDocument(document =>
              {
                  Scopes = new Dictionary<string, string>
                         {
-                            { $"api://2c1b4437-c904-4a4e-840e-bca7302f310f/access_as_user", "Access Application" },
+                            { $"api://142d74a3-61da-496b-a789-ec791d670663/access_as_user", "Access Application" },
                         },
-                 AuthorizationUrl = $"https://login.microsoftonline.com/4ba0deaf-1a4b-498a-a2c2-30f130f85e67/oauth2/v2.0/authorize",
-                 TokenUrl = $"https://login.microsoftonline.com/4ba0deaf-1a4b-498a-a2c2-30f130f85e67/oauth2/v2.0/token",
+                 AuthorizationUrl = $"https://login.microsoftonline.com/72f988bf-86f1-41af-91ab-2d7cd011db47/oauth2/v2.0/authorize",
+                 TokenUrl = $"https://login.microsoftonline.com/72f988bf-86f1-41af-91ab-2d7cd011db47/oauth2/v2.0/token",
              },
          },
      });
@@ -51,8 +51,8 @@ app.UseSwaggerUi3(settings =>
         // Alternatively you can register another application in the portal and use that as client id
         // Doing that you will have to create a client secret to access that application and get into space of secret management
         // This makes it easier to access the application and grab a token on behalf of user
-        ClientId = "2c1b4437-c904-4a4e-840e-bca7302f310f",
-        AppName = "rklab-webapi-demo",
+        ClientId = "142d74a3-61da-496b-a789-ec791d670663",
+        AppName = "trim-middleware-api",
     };
 });
 

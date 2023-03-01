@@ -5,7 +5,7 @@ using Microsoft.Graph;
 
 namespace WebApplication1.Controllers
 {
-    [Authorize(Roles = "OpsAdmin,OperatorServiceClient")]
+    [Authorize(Roles = "SupplierClient")]
     [ApiController]
     [Route("[controller]")]
     //[RequiredScope(RequiredScopesConfigurationKey = "AzureAd:Scopes")]

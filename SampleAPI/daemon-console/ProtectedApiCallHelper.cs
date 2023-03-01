@@ -48,10 +48,7 @@ namespace daemon_console
                 HttpResponseMessage response = await HttpClient.GetAsync(webApiUrl);
                 if (response.IsSuccessStatusCode)
                 {
-                    string json = await response.Content.ReadAsStringAsync();
-                    JsonNode result = JsonNode.Parse(json);
-                    Console.ForegroundColor = ConsoleColor.Gray;
-                    processResult(result);
+                    Console.WriteLine($"ResultCode: {response.StatusCode}");
                 }
                 else
                 {
