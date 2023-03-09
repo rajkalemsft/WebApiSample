@@ -41,6 +41,9 @@ builder.Services.AddOpenApiDocument(document =>
 
 var app = builder.Build();
 
+app.UseStaticFiles();
+
+
 // Add Swagger UI
 app.UseOpenApi();
 app.UseSwaggerUi3(settings =>
