@@ -8,6 +8,24 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Controllers\MarkdownController.cs" />
+    <Compile Remove="Pages\MarkdownTagHelper.cshtml.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="Pages\MarkdownParsing.cshtml" />
+    <Content Remove="Pages\MarkdownTagHelper.cshtml" />
+    <Content Remove="wwwroot\images\AspnetCoreMarkdownBanner.jpg" />
+    <Content Remove="wwwroot\images\AspnetCoreMarkdownBanner.pdn" />
+    <Content Remove="wwwroot\images\banner1.svg" />
+    <Content Remove="wwwroot\images\banner2.svg" />
+    <Content Remove="wwwroot\images\banner3.svg" />
+    <Content Remove="wwwroot\images\banner4.svg" />
+    <Content Remove="wwwroot\images\MarkdownMonster_wide.jpg" />
+    <Content Remove="wwwroot\images\WestWindText.png" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="7.0.3" />
     <PackageReference Include="Microsoft.AspNetCore.Authentication.OpenIdConnect" Version="7.0.3" />
     <PackageReference Include="Microsoft.Identity.Web" Version="2.5.0" />
@@ -16,6 +34,12 @@
     <PackageReference Include="NSwag.AspNetCore" Version="13.18.2" />
     <PackageReference Include="NSwag.Core" Version="13.18.2" />
     <PackageReference Include="NSwag.Generation.AspNetCore" Version="13.18.2" />
+    <PackageReference Include="Westwind.AspNetCore.Markdown" Version="3.10.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Pages\Shared\" />
+    <Folder Include="wwwroot\images\" />
   </ItemGroup>
 
 </Project>

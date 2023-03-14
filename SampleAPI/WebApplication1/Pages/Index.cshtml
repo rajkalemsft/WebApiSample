@@ -1,0 +1,37 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+@section headers
+{
+
+    <style>
+        .hero-text {
+            text-align: center;
+            line-height: 1.8em;
+            font-size: 2.7em;
+            padding: 35px 0 82px;
+            background: black;
+            color: white;
+            font-weight: 500;
+        }
+        @@media (max-width:600px) {
+            .hero-text {
+                font-size: 1.8em;
+            }
+        }
+   
+        .text-primary {
+            font-weight: bold !important;
+            color: khaki;
+            font-size: 1.2em;
+        }    
+    </style>
+}
+
+<div class="row">
+    <div class="col-md-6">
+        <h2>Markdown Samples</h2>
+    </div>
+</div>
