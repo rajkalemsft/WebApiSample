@@ -6,7 +6,7 @@
   },
   "servers": [
     {
-      "url": "trim-middleware-api.azurewebsites.net"
+      "url": ""
     }
   ],
   "paths": {

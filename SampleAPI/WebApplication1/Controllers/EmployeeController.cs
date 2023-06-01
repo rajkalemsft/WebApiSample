@@ -5,7 +5,7 @@ using Microsoft.Graph;
 
 namespace WebApplication1.Controllers
 {
-    [Authorize(Roles = "SupplierClient")]
+    //[Authorize(Roles = "SupplierClient")]
     [ApiController]
     [Route("[controller]")]
     //[RequiredScope(RequiredScopesConfigurationKey = "AzureAd:Scopes")]
@@ -20,7 +20,7 @@ namespace WebApplication1.Controllers
         }
 
         [HttpGet]
-        [Route("/employees")]
+        [Route("/employee")]
         [Produces("application/json")]
         public async Task<IEnumerable<Employee>> Get()
         {

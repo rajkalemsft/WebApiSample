@@ -39,6 +39,7 @@
 
   <ItemGroup>
     <Folder Include="Pages\Shared\" />
+    <Folder Include="Properties\PublishProfiles\" />
     <Folder Include="wwwroot\images\" />
   </ItemGroup>
 
