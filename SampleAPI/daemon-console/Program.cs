@@ -70,7 +70,7 @@ namespace daemon_console
             // With client credentials flows the scopes is ALWAYS of the shape "resource/.default", as the 
             // application permissions need to be set statically (in the portal or by PowerShell), and then granted by
             // a tenant administrator
-            string[] scopes = new string[] { config.TodoListScope };
+            string[] scopes = new string[] { config.Scope };
 
             AuthenticationResult result = null;
             try
@@ -94,7 +94,7 @@ namespace daemon_console
             {
                 var httpClient = new HttpClient();
                 var apiCaller = new ProtectedApiCallHelper(httpClient);
-                await apiCaller.CallWebApiAndProcessResultASync($"{config.TodoListBaseAddress}/WeatherForecast", result.AccessToken, Display);
+                await apiCaller.CallWebApiAndProcessResultASync($"{config.BaseAddress}/api/v1/RequestStatus/UAT?RequestNumber=4800001736", result.AccessToken, Display);
             }
         }
 

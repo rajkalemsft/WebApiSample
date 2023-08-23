@@ -68,12 +68,12 @@ namespace daemon_console
         /// <summary>
         /// Web Api base URL
         /// </summary>
-        public string TodoListBaseAddress { get; set; }
+        public string BaseAddress { get; set; }
 
         /// <summary>
         /// Web Api scope. With client credentials flows, the scopes is ALWAYS of the shape "resource/.default"
         /// </summary>
-        public string TodoListScope { get; set; }
+        public string Scope { get; set; }
 
         /// <summary>
         /// Reads the configuration from a json file
